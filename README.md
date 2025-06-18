@@ -1,7 +1,7 @@
-📊 Netflix Movies & TV Shows EDA Project
+#📊 Netflix Movies & TV Shows EDA Project
 A comprehensive exploratory data analysis (EDA) of Netflix’s catalog to uncover trends in content type, release patterns, regional contributions, genres, and participation by actors and directors.
 
-🎯 Objective
+##🎯 Objective
 The objective of this project is to analyze the Netflix dataset and extract actionable insights that can help:
 
 Understand the type and volume of content available.
@@ -14,12 +14,12 @@ Reveal release trends and patterns in content addition.
 
 Support strategic decisions in content curation and recommendations.
 
-📁 Dataset
+##📁 Dataset
 The dataset used is titled "NETFLIX MOVIES AND TV SHOWS CLUSTERING.csv", containing details like:
 
 Title, type (Movie/TV Show), country, release year, duration, cast, director, genre (listed_in), and date added.
 
-🧰 Libraries Used
+##🧰 Libraries Used
 Pandas – Data manipulation and cleaning
 
 NumPy – Numerical operations
@@ -32,7 +32,7 @@ Warnings – To suppress unnecessary warnings
 
 Datetime – Date operations for columns like date_added
 
-🔍 Key Explorations & Visualizations
+##🔍 Key Explorations & Visualizations
 1. Content Type Distribution
 Pie chart showing share of Movies vs TV Shows.
 
@@ -73,7 +73,7 @@ Relationship between release year, content duration, and addition year.
 
 📌 Insight: No strong linear correlation, but newer content is more frequently added.
 
-📈 Business Impact
+##📈 Business Impact
 Helps Netflix identify regional strengths and gaps.
 
 Aids in talent acquisition (popular actors/directors).
@@ -82,7 +82,7 @@ Supports genre-focused content production and localized content strategies.
 
 Offers data-driven inputs for recommender systems and UI personalization.
 
-🧼 Data Cleaning
+##🧼 Data Cleaning
 Removed or replaced all missing values with 'Not Known' or 'Unknown'.
 
 Extracted duration_time and duration_type from the original duration column.
