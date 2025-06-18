@@ -1,23 +1,90 @@
-# EDA-on-Netflix-Dataset
+📊 Netflix Movies & TV Shows EDA Project
+A comprehensive exploratory data analysis (EDA) of Netflix’s catalog to uncover trends in content type, release patterns, regional contributions, genres, and participation by actors and directors.
 
-This project presents an exploratory data analysis (EDA) of Netflix’s movie and TV show dataset, aiming to uncover key insights about content trends, popular genres, country-wise distributions, and actor prominence on the platform. The dataset includes attributes such as title, type (Movie or TV Show), cast, country, release year, date added, and listed genres. Initial data cleaning involved standardizing column values and handling missing data by replacing them with “Unknown” to maintain consistency across visualizations. The analysis primarily focused on understanding how Netflix’s content library has evolved over the years and identifying key contributors in terms of countries, genres, and actors.
+🎯 Objective
+The objective of this project is to analyze the Netflix dataset and extract actionable insights that can help:
 
-Overall, the EDA provides a strong foundational understanding of how Netflix’s global content offering is shaped. It highlights how a few key countries dominate content production, how actor representation varies by region, and how genre and format trends have shifted over time. These insights can inform further analysis on user preferences, regional market strategies, or content recommendation systems. The entire analysis was done using simple and intuitive Python visualizations, making the findings accessible even to beginners in data science.
+Understand the type and volume of content available.
 
+Explore genre and duration distributions.
 
-### Problem Statement
-With the rapid global expansion of streaming platforms, understanding content distribution, audience preferences, and production trends has become essential for competitive success. Netflix, as a leading OTT provider, offers a vast library of movies and TV shows across various genres and countries. However, this extensive catalog lacks structured insights regarding the most active countries in content production, popular genres, top recurring actors, and temporal release trends.
-The problem this project addresses is: "How can we analyze and visualize Netflix's content data to uncover key trends in content type, genre, country contributions, and actor prominence, in order to better understand the platform's global content strategy?".
+Identify key contributing countries, actors, and directors.
 
-### Business Objective:
-1.Which countries dominate Netflix’s content library.
+Reveal release trends and patterns in content addition.
 
-2.The most common genres and how they vary across regions.
+Support strategic decisions in content curation and recommendations.
 
-3.Top 10 Rating of content available on Netflix.
+📁 Dataset
+The dataset used is titled "NETFLIX MOVIES AND TV SHOWS CLUSTERING.csv", containing details like:
 
-4.The most frequent actors featured on the platform.
+Title, type (Movie/TV Show), country, release year, duration, cast, director, genre (listed_in), and date added.
 
-5.Top Directors dominating the entertainment industry worldwide.
+🧰 Libraries Used
+Pandas – Data manipulation and cleaning
 
-6.Trends in content releases over time (movies vs TV shows)
+NumPy – Numerical operations
+
+Matplotlib – Basic plotting
+
+Seaborn – Advanced visualization
+
+Warnings – To suppress unnecessary warnings
+
+Datetime – Date operations for columns like date_added
+
+🔍 Key Explorations & Visualizations
+1. Content Type Distribution
+Pie chart showing share of Movies vs TV Shows.
+
+📌 Insight: Movies dominate the Netflix catalog.
+
+2. Top Genres
+Bar chart of top 10 most frequent genres.
+
+📌 Insight: Drama and International content lead genre-wise.
+
+3. Content Duration Breakdown
+Separated duration into time and unit (e.g., minutes vs seasons).
+
+📌 Insight: TV shows mostly span 1-2 seasons, while movies cluster around 90-120 minutes.
+
+4. Top Countries
+Bar plot of top 10 countries producing Netflix content.
+
+📌 Insight: United States, India, and UK are top contributors.
+
+5. Release Trend Over Time
+Countplot showing yearly content release trends.
+
+📌 Insight: Peak in releases observed after 2015.
+
+6. Release Year vs Year Added
+Pairplot among release_year, year_added, and duration_time.
+
+📌 Insight: Most content is added shortly after its release.
+
+7. Top Actors and Directors
+Pie charts for top 5 actors/directors from US, India, UK.
+
+📌 Insight: Content is driven by a few high-frequency contributors.
+
+8. Pairplot Insights
+Relationship between release year, content duration, and addition year.
+
+📌 Insight: No strong linear correlation, but newer content is more frequently added.
+
+📈 Business Impact
+Helps Netflix identify regional strengths and gaps.
+
+Aids in talent acquisition (popular actors/directors).
+
+Supports genre-focused content production and localized content strategies.
+
+Offers data-driven inputs for recommender systems and UI personalization.
+
+🧼 Data Cleaning
+Removed or replaced all missing values with 'Not Known' or 'Unknown'.
+
+Extracted duration_time and duration_type from the original duration column.
+
+Converted date_added into separate year_added for time-based analysis.
