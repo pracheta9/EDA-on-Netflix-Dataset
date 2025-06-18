@@ -11,8 +11,13 @@ The problem this project addresses is: "How can we analyze and visualize Netflix
 
 ### Business Objective:
 1.Which countries dominate Netflix’s content library.
+
 2.The most common genres and how they vary across regions.
+
 3.Top 10 Rating of content available on Netflix.
+
 4.The most frequent actors featured on the platform.
+
 5.Top Directors dominating the entertainment industry worldwide.
+
 6.Trends in content releases over time (movies vs TV shows)
